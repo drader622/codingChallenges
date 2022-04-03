@@ -12,7 +12,11 @@
 //P:
 //Make a function that takes in an array
 function doubleArray(arr) {
-   return arr.map(num => num*2);
+   if (arr.length = 0) {
+      console.log('Array is invalid')
+   } else {
+      return arr.map(num => num * 2);
+   }
 }
 //map through the array and multiply each element by 2. Also return
-console.log(doubleArray([2,3,4]),[4,6,8])
+console.log(doubleArray([2, 3, 4]), [4, 6, 8])
