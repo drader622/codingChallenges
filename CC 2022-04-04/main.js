@@ -20,3 +20,4 @@ function doubleArray(arr) {
 }
 //map through the array and multiply each element by 2. Also return
 console.log(doubleArray([2, 3, 4]), [4, 6, 8])
+console.log(doubleArray([1, 2, 3]), [2, 4, 6])
