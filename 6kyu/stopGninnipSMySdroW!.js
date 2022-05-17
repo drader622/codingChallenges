@@ -5,11 +5,6 @@
 function spinWords(string) {
     return string.split(' ').map(word => {
         return (word.length > 4) ? word.split('').reverse().join('') : word;
-        // if (word.length > 4) {
-        //     return word.split('').reverse().join('');
-        // } else {
-        //     return word;
-        // }
     }).join(' ');
 }
 
