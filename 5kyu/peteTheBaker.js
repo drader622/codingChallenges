@@ -1,7 +1,6 @@
-// P: two objects - recipe and ingredients
-// R: integer of how many cakes can be made with provided ingredients
-// E: 
-// P: subtract amount needed from ingredients given and add 1 to cakes. Continue to do this until one of the ingredients is less than amount needed.
+// Pete likes to bake some cakes. He has some recipes and ingredients. Unfortunately he is not good in maths. Can you help him to find out, how many cakes he could bake considering his recipes?
+
+// Write a function cakes(), which takes the recipe (object) and the available ingredients (also an object) and returns the maximum number of cakes Pete can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients that are not present in the objects, can be considered as 0.
 
 function cakes(recipe, available) {
   let ObjKeys = Object.keys(recipe);
