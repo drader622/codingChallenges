@@ -1,5 +1,5 @@
 const binaryArrayToNumber = arr => {
-    let posValue = arr.length * 2,
+    let posValue = Math.pow(2, arr.length - 1),
         total = 0;
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === 1) total += posValue;
