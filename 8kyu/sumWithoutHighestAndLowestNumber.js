@@ -11,7 +11,7 @@
 // If an empty value(null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 
 function sumArray(array) {
-    if (array === null || array.length < 3 || !array)
+    if (!array || array === null || array.length <= 2)
         return 0;
     else {
         let sortedArr = array.sort((a, b) => a - b);
@@ -20,7 +20,6 @@ function sumArray(array) {
         let total = sortedArr.reduce((a, b) => a + b, 0)
         return total;
     }
-
 }
 
 console.log(sumArray(null), 0);
